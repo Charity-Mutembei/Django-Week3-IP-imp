@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ProjectSee-LandingPage</title>
+</head>
+<style>
+  body{
+    background-image: url('/static/47c6cc692934eb88fd2d3b.jpg');
+    overflow-x: hidden;
+    background-size: fit;
+
+  }
+  .container{
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 2%;
+    
+  }
+  #icon{
+    color: yellow;
+    font-size: 1cm;
+    margin-left: 0.5cm;
+
+  }
+  #see{
+    color: yellow;
+    border: 1px solid blueviolet;
+    border-radius: 3cm;
+    background-color: black;
+    width: 3cm;
+  }
+  #see1{
+    color: yellow;
+    font-size: 1cm;
+  }
+  
+  #links{
+    margin-left: 11cm;
+
+  }
+</style>
+<body>
+
+  <!-- navbar area  -->
+  <div class="container">
+    <div class="navbar">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="see1" href="#"><strong>PROJECT-SEE</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="links">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" id="see" class="linky"  href="#"><strong >Home</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" id="see" class="linky1"  style="margin-left: 2cm;" href="#"><strong>Contacts</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" id="see" class="linky2" style="margin-left: 2cm;" href="#"><strong>Logout</strong></a>
+              </li>              
+            
+            </ul>
+            <div class="icon">
+              <a href="#"><i class="fa-solid fa-circle-user" id="icon"></i></a>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+      <!-- navbar area end  --> 
+    <div class="transparent">
+      <div class="row">
+        <div class="col">
+          <div class="image">
+            <img src="/static/[removal.ai]_tmp-62a510d3c6bd5.png" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="first-text">
+            <h1 style="font-weight: 900; font-size: 2cm; margin-top: 30%; color: yellow;">VOTE FOR THE BEST</h1>
+          </div>
+          <div class="second-text" style="color: white;">
+            <h6 style="font-size: 0.5cm; font-weight: bold;">Lorem Ipsum is simply dummy text of the printing 
+              and typesetting industry</h6>
+          </div>
+          <div class="third-part" style=" border: 1px solid blueviolet; background-color: black; width: 5cm; margin-top: 8%; margin-left: 22%; border-radius: 1cm;">
+            <a href="{% url 'welcome' %}"><h3 style="color: yellow;  margin-left: 22%; margin-top: 5%;">explore</h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <hr>
+
+
+    <!-- bottom area  -->
+
+    <div class="contact-us">
+     <div class="row">
+      <div class="col">
+        <div class="twitter">
+          <a href="#" style="color: white;"><i class="fa-brands fa-twitter"  style="color: yellow;  font-size: 0.7cm;"></i>@project-see.com</a>
+        </div>        
+      </div>
+      <div class="col">
+        <div class="instagram">
+          <a href="#" style="color: white;"><i class="fa-brands fa-instagram-square"  style="color: yellow;  font-size: 0.7cm;"></i>@project-see.com</a>
+        </div>      
+      </div>
+      <div class="col">
+        <div class="facebook">
+          <a href="#" style="color: white;"><i class="fa-brands fa-facebook"  style="color: yellow;  font-size: 0.7cm;"></i>@project-see.com</a>
+        </div>       
+      </div>
+      <div class="col">
+        <div class="messager">
+          <a href="{% url 'welcome' %}" style="color: white;"><i class="fa-brands fa-facebook-messenger"  style="color: yellow;  font-size: 0.7cm;"></i>@project-see.com</a>
+        </div>
+      </div>
+     </div>
+     <div class="space">
+      <span>.</span>
+     </div>
+    </div>
+    
+
+
+
+
+
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+{% endblock%}
